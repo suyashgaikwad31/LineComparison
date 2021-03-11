@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.lang.*;
 
 public class LineComparision {
-	// UC-2
+	//UC-3
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -41,6 +41,20 @@ public class LineComparision {
                 Float length2 = (float) Math.sqrt( (Math.pow((x4 - x3),2) + Math.pow((y4 - y3),2)) );
                 System.out.println("Length of the line 2 is: " + length2);
 
-		System.out.println(length1.equals(length2));
+		int diff = length1.compareTo(length2);
+		switch(diff) {
+			case -1:
+				System.out.println("Line 2 is Longer than Line 1");
+				break;
+			case 0:
+				System.out.println("Both Lines are Equal");
+				break;
+			case 1:
+				System.out.println("Line 1 is Longer than Line 2");
+				break;
+			default:
+				System.out.println("Some error has occured");
+				break;
+		}
 	}
 }
