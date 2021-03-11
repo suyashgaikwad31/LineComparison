@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.lang.*;
 
 public class LineComparision {
-	//This is UC-1
+	//uc1
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
